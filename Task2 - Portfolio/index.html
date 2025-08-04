@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ishika Gupta - Portfolio</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#57b5e7',secondary:'#8dd3c7'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body { font-family: 'Inter', sans-serif; }
+.gradient-bg {
+background: linear-gradient(135deg, #57b5e7 0%, #8dd3c7 100%);
+opacity: 0.1;
+}
+</style>
+</head>
+<body class="bg-white">
+<header class="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
+<nav class="px-6 py-4">
+<div class="flex justify-between items-center max-w-7xl mx-auto">
+<div class="font-['Pacifico'] text-2xl text-primary">Portfolio</div>
+<div class="flex space-x-8">
+<a href="#home" class="text-gray-700 hover:text-primary hover:underline transition-colors">Home</a>    
+<a href="#about" class="text-gray-700 hover:text-primary hover:underline transition-colors">About</a>
+<a href="#skills" class="text-gray-700 hover:text-primary hover:underline transition-colors">Skills</a>
+<a href="#projects" class="text-gray-700 hover:text-primary hover:underline transition-colors">Projects</a>
+<a href="#resume" class="text-gray-700 hover:text-primary hover:underline transition-colors">Resume</a>
+<a href="#contact" class="text-gray-700 hover:text-primary hover:underline transition-colors">Contact</a>
+</div>
+</div>
+</nav>
+</header>
+<section id="home" class="pt-20 pb-16 min-h-screen flex items-center relative overflow-hidden">
+  <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-100 via-white to-indigo-100">
+    <div class="absolute top-20 left-10 w-96 h-96 bg-blue-200 rounded-full filter blur-[128px] opacity-30 animate-pulse"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 bg-indigo-200 rounded-full filter blur-[128px] opacity-30 animate-pulse [animation-delay:2s]"></div>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-blue-100 to-indigo-100 rounded-full filter blur-[96px] opacity-20"></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 relative">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div class="lg:w-1/2 flex justify-center lg:justify-start">
+        <div class="relative group">
+          <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
+          <div class="relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-indigo-600/20 rounded-2xl transform rotate-6 scale-105"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-indigo-600/20 rounded-2xl transform -rotate-6 scale-105"></div>
+            <img
+              src="Images/Profile.jpg"
+              alt="Ishika Gupta"
+              class="w-80 h-80 lg:w-96 lg:h-96 rounded-2xl shadow-2xl object-cover object-top transform group-hover:scale-[1.01] transition duration-500 relative z-10"
+            />
+            <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-full flex items-center justify-center shadow-lg transform group-hover:rotate-12 transition duration-500 z-20">
+              <i class="fas fa-code text-white text-2xl"></i>
+            </div>
+            <div class="absolute -top-4 -left-4 w-20 h-20 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-full flex items-center justify-center shadow-lg z-20">
+              <i class="fas fa-laptop-code text-white text-xl"></i>
+            </div>
+            <div class="absolute top-1/2 -left-8 transform -translate-y-1/2 flex flex-col gap-4">
+              <div class="w-3 h-3 rounded-full bg-blue-600 animate-bounce [animation-delay:0s]"></div>
+              <div class="w-3 h-3 rounded-full bg-indigo-600 animate-bounce [animation-delay:0.2s]"></div>
+              <div class="w-3 h-3 rounded-full bg-blue-400 animate-bounce [animation-delay:0.4s]"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/2 text-center lg:text-left relative">
+        <div class="mb-8">
+          <div class="inline-flex items-center bg-gradient-to-r from-blue-50 to-indigo-50 rounded-full px-6 py-3 text-blue-600 font-medium text-sm mb-4 shadow-lg relative overflow-hidden group hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-100 to-indigo-100 transform translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
+            <div class="relative z-10 flex items-center">
+              <div class="w-2 h-2 bg-blue-600 rounded-full mr-3 animate-pulse"></div>
+              <span class="mr-2 font-bold">Student</span>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="relative text-5xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+          <div class="relative inline-block">
+            <span class="relative z-10">Ishika</span>
+          </div>
+          <div class="relative">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block">Gupta</span>
+          </div>
+        </h1>
+        <p class="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+          Hi, I’m a passionate computer science and engineering student exploring the world of Frontend Development and Artificial Intelligence. I love crafting interactive user interfaces and diving into the logic behind intelligent systems. Always curious, always learning.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <a href="#projects" class="group relative bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30 whitespace-nowrap overflow-hidden">
+            <span class="relative z-10">View My Work</span>
+            <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-indigo-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </a>
+           <a href="#contact" class="group relative bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30 whitespace-nowrap overflow-hidden">
+            <span class="relative z-10">Get In Touch</span>
+            <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-indigo-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about" class="py-20 bg-gray-50">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<h2 class="text-4xl font-bold text-gray-900 mb-8">About Me</h2>
+<p class="text-lg text-gray-700 leading-relaxed mb-8">
+I am a passionate and driven college student with a keen interest in both frontend development and artificial intelligence. I enjoy transforming ideas into visually appealing and interactive web experiences using modern technologies like HTML, CSS, JavaScript, React, and Tailwind CSS. My journey in web development has taught me the value of clean design, responsive layouts, and user-first thinking.
+</p>
+<p class="text-lg text-gray-700 leading-relaxed mb-8">
+Alongside frontend work, I am also exploring the exciting world of AI — particularly machine learning, data handling, and Python-based frameworks. I am fascinated by how intelligent systems can be used to solve real-world problems and enhance user experience.
+</p>
+<p class="text-lg text-gray-700 leading-relaxed mb-8">
+I actively seek opportunities to build hands-on projects that integrate both my design sense and logical thinking. Whether it's crafting a dynamic website or experimenting with AI models, I am always eager to learn, improve, and take on new challenges. With a strong foundation in programming and a curiosity-driven mindset, I aim to contribute meaningfully to innovative and impactful tech solutions.
+</p>
+<div class="flex flex-wrap justify-center gap-3">
+<span class="bg-primary/10 text-primary px-4 py-2 rounded-full mb-3 text-sm">Problem Solver</span>
+<span class="bg-secondary/10 text-secondary px-4 py-2 rounded-full mb-3 text-sm">Team Player</span>
+<span class="bg-primary/10 text-primary px-4 py-2 rounded-full mb-3 text-sm">Critical Thinker</span>
+<span class="bg-secondary/10 text-secondary px-4 py-2 rounded-full mb-3 text-sm">Continuous Learner</span>
+</div>
+</div>
+<section id="skills" class="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-gray-900 text-center mb-16">Frontend Skills</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-2xl shadow-lg space-y-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
+              <i class="ri-javascript-line text-xl text-primary"></i>
+            </div>
+            <span class="text-gray-900 font-medium">JavaScript</span>
+          </div>
+          <span class="text-primary font-medium">75%</span>
+        </div>
+        <div class="h-3 bg-gray-100 rounded-full overflow-hidden">
+          <div class="h-full w-[75%] bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg space-y-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
+              <i class="ri-reactjs-line text-xl text-primary"></i>
+            </div>
+            <span class="text-gray-900 font-medium">React.js</span>
+          </div>
+          <span class="text-primary font-medium">70%</span>
+        </div>
+        <div class="h-3 bg-gray-100 rounded-full overflow-hidden">
+          <div class="h-full w-[70%] bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg space-y-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
+              <i class="ri-html5-line text-xl text-primary"></i>
+            </div>
+            <span class="text-gray-900 font-medium">HTML5</span>
+          </div>
+          <span class="text-primary font-medium">90%</span>
+        </div>
+        <div class="h-3 bg-gray-100 rounded-full overflow-hidden">
+          <div class="h-full w-[90%] bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg space-y-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
+              <i class="ri-css3-line text-xl text-primary"></i>
+            </div>
+            <span class="text-gray-900 font-medium">CSS3</span>
+          </div>
+          <span class="text-primary font-medium">85%</span>
+        </div>
+        <div class="h-3 bg-gray-100 rounded-full overflow-hidden">
+          <div class="h-full w-[85%] bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg space-y-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
+              <i class="ri-tailwind-line text-xl text-primary"></i>
+            </div>
+            <span class="text-gray-900 font-medium">Tailwind CSS</span>
+          </div>
+          <span class="text-primary font-medium">80%</span>
+        </div>
+        <div class="h-3 bg-gray-100 rounded-full overflow-hidden">
+          <div class="h-full w-[80%] bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg space-y-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
+              <i class="ri-python-line text-xl text-primary"></i>
+            </div>
+            <span class="text-gray-900 font-medium">Python</span>
+          </div>
+          <span class="text-primary font-medium">80%</span>
+        </div>
+        <div class="h-3 bg-gray-100 rounded-full overflow-hidden">
+          <div class="h-full w-[80%] bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="projects" class="py-20 bg-gray-50">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-4xl font-bold text-gray-900 text-center mb-16">Featured Projects</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+<img src="Images/E-commerce.png" alt="E-commerce Platform" class="w-full h-47 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">E-commerce Platform</h3>
+<p class="text-gray-600 mb-4">A sleek and responsive e-commerce website for showcasing and selling products online.
+</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs">HTML</span>
+<span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs">CSS</span>
+</div>
+<button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+<a href="https://e-commerce-website-green-six.vercel.app/" target="_blank">View Project</a>
+</button>
+</div>
+</div>
+<div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+<img src="Images/Minesweeper.png" alt="Minesweeper" class="w-full h-47 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Minesweeper Game</h3>
+<p class="text-gray-600 mb-4">A fun and interactive online Minesweeper game with a clean, user-friendly interface.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs">HTML</span>
+<span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs">CSS</span>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs">JavaScript</span>
+</div>
+<button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+<a href="https://minesweeper123.vercel.app/" target="_blank">View Project</a>
+</button>
+</div>
+</div>
+<div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+<img src="Images/LandingPage.png" alt="Analytics Dashboard" class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Travel Site</h3>
+<p class="text-gray-600 mb-4">A vibrant travel landing page showcasing destinations with easy booking and user reviews.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs">HTML</span>
+<span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs">CSS</span>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs">JavaScript</span>
+</div>
+<button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+<a href="https://codsoft-ng3y.vercel.app/" target="_blank">View Project</a>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="resume" class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <div class="mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Resume</h2>
+      <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+    </div>
+    <div class="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 lg:p-12">
+      <div class="mb-8">
+        <i class="fas fa-file-pdf text-6xl text-blue-600 mb-6"></i>
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Download My Resume</h3>
+        <p class="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
+          Get a comprehensive overview of my experience, skills, and achievements. My resume includes detailed information about my professional journey and technical expertise.
+        </p>
+      </div>
+      <button class="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition-colors cursor-pointer whitespace-nowrap text-lg">
+        <i class="fas fa-download mr-3"></i>
+        <a href="Ishika's Resume.pdf" target="_blank" download>Download My Resume</a>
+      </button>
+    </div>
+  </div>
+</section>
+<section id="contact" class="py-20 bg-gray-50">
+<div class="max-w-4xl mx-auto px-6">
+<h2 class="text-4xl font-bold text-gray-900 text-center mb-16">Get In Touch</h2>
+<div class="grid md:grid-cols-2 gap-12">
+<div>
+<h3 class="text-2xl font-semibold text-gray-900 mb-6">Let's Connect</h3>
+<div class="space-y-4">
+<div class="flex items-center">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<p class="font-medium text-gray-900">Email</p>
+<p class="text-gray-600">guptaishika1208@gmail.com</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4">
+<i class="ri-phone-line text-secondary"></i>
+</div>
+<div>
+<p class="font-medium text-gray-900">Phone</p>
+<p class="text-gray-600">+91 6388 xxx xxx</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+<i class="ri-linkedin-line text-primary"></i>
+</div>
+<div>
+<p class="font-medium text-gray-900">LinkedIn</p>
+<p class="text-gray-600 cursor-pointer"><a href="https://www.linkedin.com/in/guptaishika12" target="_blank">guptaishika12</a></p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4">
+<i class="ri-github-line text-secondary"></i>
+</div>
+<div>
+<p class="font-medium text-gray-900">GitHub</p>
+<p class="text-gray-600 cursor-pointer"><a href="https://github.com/Ishika-1208" target="_blank">Ishika-1208</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-lg">
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+<input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+<input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+<input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+<textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent resize-none"></textarea>
+</div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Send Message
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-gray-900 text-white py-12 mb-0">
+<div class="max-w-6xl mx-auto px-6">
+<div class="grid md:grid-cols-3 gap-8">
+<div>
+<div class="font-['Pacifico'] text-2xl text-primary mb-4">Ishika Gupta</div>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Quick Links</h4>
+<div class="space-y-2">
+<a href="#home" class="block text-gray-400 hover:text-white transition-colors">Home</a>  
+<a href="#about" class="block text-gray-400 hover:text-white transition-colors">About</a>
+<a href="#skills" class="block text-gray-400 hover:text-white transition-colors">Skills</a>
+<a href="#projects" class="block text-gray-400 hover:text-white transition-colors">Projects</a>
+<a href="#resume" class="block text-gray-400 hover:text-white transition-colors">Resume</a>
+<a href="#contact" class="block text-gray-400 hover:text-white transition-colors">Contact</a>
+</div>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Connect</h4>
+<div class="flex space-x-4">
+<a href="https://github.com/Ishika-1208" target="_blank" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-github-line"></i>
+</a>
+<a href="https://www.linkedin.com/in/guptaishika12" target="_blank" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-linkedin-line"></i>
+</a>
+<a href="mailto:guptaishika1208@gmail.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-mail-line"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-8 pt-8 text-center">
+<p class="text-gray-400">&copy; 2025 Ishika Gupta. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script id="smooth-scroll">
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+const targetSection = document.querySelector(targetId);
+if (targetSection) {
+const headerHeight = document.querySelector('header').offsetHeight;
+const targetPosition = targetSection.offsetTop - headerHeight;
+window.scrollTo({
+top: targetPosition,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+<script id="contact-form">
+document.addEventListener('DOMContentLoaded', function() {
+const form = document.querySelector('form');
+form.addEventListener('submit', function(e) {
+e.preventDefault();
+const formData = new FormData(form);
+const name = form.querySelector('input[type="text"]').value;
+const email = form.querySelector('input[type="email"]').value;
+const subject = form.querySelectorAll('input[type="text"]')[1].value;
+const message = form.querySelector('textarea').value;
+if (name && email && subject && message) {
+alert('Thank you for your message! I\'ll get back to you soon.');
+form.reset();
+} else {
+alert('Please fill in all fields.');
+}
+});
+});
+</script>
+<script id="hero-cta">
+document.addEventListener('DOMContentLoaded', function() {
+const ctaButton = document.querySelector('section button');
+ctaButton.addEventListener('click', function() {
+const contactSection = document.querySelector('#contact');
+const headerHeight = document.querySelector('header').offsetHeight;
+const targetPosition = contactSection.offsetTop - headerHeight;
+window.scrollTo({
+top: targetPosition,
+behavior: 'smooth'
+});
+});
+});
+</script>
+</body>
+</html>
